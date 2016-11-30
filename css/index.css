@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.board {
+  display:block;
+  background-color: #ebcd66;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.list {
+  display:inline-block;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.card {
+  font-size: 1.5em;
+  background-color: #679fe2;
+  color: #f1f2f2;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  min-width: 200px;
+}
