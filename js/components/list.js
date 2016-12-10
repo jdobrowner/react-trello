@@ -3,16 +3,19 @@ var ReactDOM = require('react-dom');
 
 var Card = require('./card');
 
-var List = function() {
-    var list = [];
-    for (var i=0; i<3; i++) {
-        list.push(<Card />);
-    }
+var List = function(props) {
     return (
-        <div className="list">
-            {list}
-        </div>
+      <div className="list">
+          <div className="list-title">{props.title}</div>
+          <Card text="fuck you" />
+          <Card text="balls" />
+          <Card text="butt muffin" />
+          <form onSubmit={props.onAddSubmit}>
+            <input type="text" onChange={props.onAddInputChanged} />
+            <input type="submit" />
+          </form>
+      </div>
     );
-};
+}
 
 module.exports = List;

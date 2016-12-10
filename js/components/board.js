@@ -1,16 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var List = require('./list');
+var ListContainer = require('./list-container');
 
-var Board = function() {
-    var board = [];
-    for (var i=0; i<3; i++) {
-        board.push(<List />);
-    }
+var Board = function(props) {
     return (
         <div className="board">
-            {board}
+            <div className="board-title">board</div>
+            <ListContainer title="Weekend Cleaning "/>
         </div>
     );
 };

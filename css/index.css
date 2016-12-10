@@ -6,20 +6,32 @@
 
 #app {
   font-family: sans-serif;
-  background-color: #f4f4f4;
+  background-color: #679fe2; /* blue */
   padding: 20px;
 }
 
 .board {
   display:block;
-  background-color: #ebcd66;
+  background-color: #ebcd66; /* yellow */
+  color: #d5743e; /* red */
+  /*border: 12px solid #d5743e;*/
   border-radius: 12px;
   margin: 20px;
 }
 
+.board-title, .list-title {
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .list {
   display:inline-block;
-  background-color: #f4f4f4;
+  background-color: #d5743e; /* red */
+  color: #ebcd66; /* yellow */
+  /*border: 12px solid #679fe2;*/
   border-radius: 12px;
   margin: 20px;
 }
@@ -27,9 +39,28 @@
 .card {
   font-size: 1.5em;
   background-color: #679fe2;
-  color: #f1f2f2;
+  /*border: 12px solid #ebcd66;*/
+  border-radius: 12px;
+  color: #ebcd66;
   text-align: center;
   padding: 20px;
   margin: 20px;
   min-width: 200px;
+}
+
+form {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 85%;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  font-size: 1.5em;
+  padding-left: 10px;
+  background-color: #ebcd66;
+  color: #679fe2; /* blue */
+  border: 3px solid #679fe2;
+  border-radius: 8px;
 }
