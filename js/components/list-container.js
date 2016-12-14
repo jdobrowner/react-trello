@@ -11,14 +11,12 @@ var ListContainer = React.createClass({
       }
     },
     onAddInputChanged: function(event) {
-      console.log(event.target.value);
       this.setState({ inputText: event.target.value });
     },
     onAddSubmit: function(event) {
       event.preventDefault();
       let updatedCards = this.state.cards;
       updatedCards.push(this.state.inputText);
-      console.log(updatedCards);
       this.setState({ cards: updatedCards });
     },
     render: function() {

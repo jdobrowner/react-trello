@@ -6,5 +6,5 @@ var ReactDOM = require('react-dom');
 var Board = require('./components/board');
 
 document.addEventListener('DOMContentLoaded', function() {
-    ReactDOM.render(<Board lists={["Superman", "Batman", "Wolverine"]} title="Super Heros"/>, document.getElementById('app'));
+    ReactDOM.render(<Board lists={["Superman", "Batman", "Wolverine"]} title="Super Heroes"/>, document.getElementById('app'));
 });
