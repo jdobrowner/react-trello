@@ -10,12 +10,16 @@ var ListContainer = React.createClass({
       cards: []
       }
     },
-    onAddInputChanged: function() {
-      console.log('goobly gobble');
+    onAddInputChanged: function(event) {
+      console.log(event.target.value);
+      this.setState({ inputText: event.target.value });
     },
     onAddSubmit: function(event) {
       event.preventDefault();
-      console.log('submitted');
+      let updatedCards = this.state.cards;
+      updatedCards.push(this.state.inputText);
+      console.log(updatedCards);
+      this.setState({ cards: updatedCards });
     },
     render: function() {
       return ( <List title={this.props.title} cards={this.state.cards} onAddInputChanged={this.onAddInputChanged} onAddSubmit={this.onAddSubmit} />

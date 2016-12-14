@@ -6,8 +6,8 @@ var ListContainer = require('./list-container');
 var Board = function(props) {
     return (
         <div className="board">
-            <div className="board-title">board</div>
-            <ListContainer title="Weekend Cleaning "/>
+            <div className="board-title">{props.title}</div>
+            <ListContainer title={props.lists[0]} />
         </div>
     );
 };
